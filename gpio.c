@@ -1,4 +1,5 @@
 #include "gpio.h"
+#include <avr/io.h>
 
 void port_setDir(uint8_t pins) {
 	DDRB = pins;
@@ -16,6 +17,6 @@ uint8_t getPortVal(void) {
 	return PINB;
 }
 
-uint8_t getPinVal(uint8_t) {
+uint8_t getPinVal(uint8_t pin) {
 	return PINB & pin;
 }
