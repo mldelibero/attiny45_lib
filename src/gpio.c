@@ -25,7 +25,7 @@ uint8_t getPinVal(uint8_t pin) {
 	return PINB & pin;
 }
 
-// Use group PIN_SOURCE_x 
+// Use PBx from iotnx5.h
 void togglePin(uint8_t pin) {
 	PINB ^= pin;
 }

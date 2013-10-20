@@ -1,6 +1,7 @@
 #ifndef __GPIO_H
 #define __GPIO_H
 #include <avr/io.h>
+#include "attiny45.h"
 
 void port_setDir(uint8_t pins);
 void setPins(uint8_t pins);
