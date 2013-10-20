@@ -27,6 +27,6 @@ uint8_t getPinVal(uint8_t pin) {
 
 // Use PBx from iotnx5.h
 void togglePin(uint8_t pin) {
-	PINB ^= pin;
+	PORTB ^= pin;
 }
 
