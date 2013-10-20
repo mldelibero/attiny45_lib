@@ -24,3 +24,9 @@ uint8_t getPortVal(void) {
 uint8_t getPinVal(uint8_t pin) {
 	return PINB & pin;
 }
+
+// Use group PIN_SOURCE_x 
+void togglePin(uint8_t pin) {
+	PINB ^= pin;
+}
+

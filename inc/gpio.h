@@ -7,5 +7,6 @@ void setPins(uint8_t pins);
 void clearPins(uint8_t pins);
 uint8_t getPortVal(void);
 uint8_t getPinVal(uint8_t);
+void togglePin(uint8_t pin);
 
 #endif // __GPIO_H
