@@ -13,7 +13,7 @@ void setPins(uint8_t pins) {
 
 // Use group PIN_SOURCE_x 
 void clearPins(uint8_t pins) {
-	PORTB |= !pins;
+	PORTB &= ~pins;
 }
 
 uint8_t getPortVal(void) {
